@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+}
+
+canvas {
+    background: #000;
+    display: block !important;
+}
+
+button {
+    padding: 7px 14px;
+    /*Ukuranpaddingdiperkecil*/font-size: 14px;
+    /*Ukuranfontdiperkecil*/font-weight: bold;
+    color: #fff;
+    background-color: #030303;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    /*Menggunakanfixeduntukposisiabsolutdilayar*/bottom: 20px;
+    /*Jarakdaribawah*/right: 20px;
+    /*Jarakdarikanan*/transform: none;
+    /*Hapustransformkarenatidakdiperlukan*/;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 10px;
+}
+
+button:hover {
+    background-color: #a9ccf5;
+}
+
+#nextScriptBtn {
+    display: none;
+    margin-top: 0; /* Hapus margin-top karena tidak diperlukan */
+}

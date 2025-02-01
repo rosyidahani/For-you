@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 10, 10);
+}
+
+/* Wrapper untuk mengatur tata letak */
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Jarak antar elemen */
+}
+
+/* Styling untuk h1 */
+.h1 {
+    color: aliceblue;
+    font-style: normal;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+/* Styling untuk h2 */
+.h2 {
+    color: aliceblue;
+    font-size: 35px;
+    font-style: oblique;
+}
+
+/* Gaya untuk tombol */
+.btn-primary {
+    background: linear-gradient(90deg, #1e345b, #8db2f3); /* Gradient warna */
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 25px; /* Membuat tombol melingkar */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    transition: all 0.3s ease; /* Transisi untuk efek */
+    text-transform: uppercase; /* Ubah teks jadi huruf kapital */
+    letter-spacing: 1px; /* Jarak antar huruf */
+}
+
+/* Efek saat hover */
+.btn-primary:hover {
+    background: linear-gradient(90deg, #8eb7e7, #abafcc); /* Warna gradient terbalik */
+    transform: translateY(-5px); /* Efek tombol terangkat */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih kuat */
+}
+
+/* Efek saat tombol ditekan */
+.btn-primary:active {
+    transform: translateY(2px); /* Tombol sedikit turun */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan kembali */
+}
+
+/* Efek berkelap-kelip */
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Gaya untuk huruf yang beranimasi */
+.letter {
+    display: inline-block;
+    animation: flicker 1s infinite;
+}
+
+/* Tambahkan delay untuk setiap huruf */
+.letter:nth-child(1) {
+    animation-delay: 0s;
+}
+.letter:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.letter:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.letter:nth-child(4) {
+    animation-delay: 0.9s;
+}
+.letter:nth-child(5) {
+    animation-delay: 1.2s;
+}
+.letter:nth-child(6) {
+    animation-delay: 1.5;
+}
+.letter:nth-child(7) {
+    animation-delay: 1.8s;
+}
+.letter:nth-child(8) {
+    animation-delay: 2.1s;
+}
+.letter:nth-child(9) {
+    animation-delay: 2.4s;
+}
+.letter:nth-child(10) {
+    animation-delay: 2.7s;
+}
+.letter:nth-child(11) {
+    animation-delay: 3s;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Firework Effect</title>
+    <link rel="stylesheet" href="styleultah.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <button id="startMusicBtn">pencet aku yaa</button>
+    <button id="nextScriptBtn" style="display: none;">ayok ikut akuu</button>
+
+    <script src="jsultah.js"></script>
+    <script>
+        const audio = new Audio('happy-birthday-to-you-piano-version-13976.mp3'); 
+        audio.loop = true;
+
+        document.getElementById('startMusicBtn').addEventListener('click', () => {
+            document.getElementById('startMusicBtn').style.display = 'none';
+
+            const show = new FireworkShow('canvas');
+            show.startCountdown();
+
+            setTimeout(() => {
+                audio.play();
+                console.log('Musik dimulai setelah 5 detik');
+            }, 5000);
+        });
+
+        if (localStorage.getItem('musicPlaying') === 'true') {
+            audio.play();
+        }
+    </script>
+</body>
+</html>
